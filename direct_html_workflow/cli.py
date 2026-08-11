@@ -77,7 +77,7 @@ def cmd_check(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Direct HTML algorithm lesson generator")
+    parser = argparse.ArgumentParser(description="LeetCode cognitive practice lab generator")
     sub = parser.add_subparsers(dest="command", required=True)
 
     serve = sub.add_parser("serve", help="start the local web UI")

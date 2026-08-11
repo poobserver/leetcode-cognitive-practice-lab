@@ -1,7 +1,7 @@
 [project]
-name = "direct-html-workflow"
+name = "leetcode-cognitive-practice-lab"
 version = "0.1.0"
-description = "Direct HTML LeetCode cognitive lesson generator"
+description = "AI cognitive practice lab generator for LeetCode-style algorithm training"
 requires-python = ">=3.9"
 dependencies = []
 

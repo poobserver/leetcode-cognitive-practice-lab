@@ -1,9 +1,9 @@
-# Direct HTML 算法认知课件生成器
+# 力扣认知刷题器
 
-这是一个独立的 direct-html 工作流，只保留一条链路：
+这是一个面向力扣刷题训练的 AI 认知课件生成器。核心仍是 direct-html 工作流：
 
 ```text
-用户粘贴算法题、代码分析题或 LeetCode 题目文本
+用户粘贴力扣题、算法题或代码分析题文本
 -> LLM 结构化为 problem.json
 -> LLM 基于 example 蓝图生成 page_plan.json
 -> page_plan 审计通过后，LLM 直接生成 standalone HTML
@@ -17,7 +17,7 @@
 
 ```mermaid
 flowchart TD
-  A["用户在前端粘贴算法题、代码或 LeetCode 题目文本"] --> B["POST /api/generate"]
+  A["用户在前端粘贴力扣题、算法题或代码分析题文本"] --> B["POST /api/generate"]
   B --> C["DeepSeek 调用 1：题目结构化"]
   C --> D["生成内部 problem.json"]
   D --> E["DeepSeek 调用 2：基于 example 蓝图生成 page_plan.json"]
@@ -76,7 +76,7 @@ python -m direct_html_workflow.cli serve
 http://127.0.0.1:8765
 ```
 
-然后粘贴一道算法题、代码分析题或 LeetCode 题目的完整文本，点击“生成学习材料”。
+然后粘贴一道力扣题、算法题或代码分析题的完整文本，点击“生成学习材料”。
 
 ## CLI 用法
 
@@ -100,7 +100,7 @@ python -m direct_html_workflow.cli check outputs/leetcode-209/direct_209_minimum
 
 ## 输入
 
-真正的用户输入是一道题的文本，可以是普通算法题、代码分析题或 LeetCode 题。推荐包含：
+真正的用户输入是一道题的文本，可以是力扣题、普通算法题或代码分析题。推荐包含：
 
 - 题号
 - 题名
