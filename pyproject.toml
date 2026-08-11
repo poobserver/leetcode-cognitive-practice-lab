@@ -1,0 +1,9 @@
+[project]
+name = "direct-html-workflow"
+version = "0.1.0"
+description = "Direct HTML LeetCode cognitive lesson generator"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools]
+packages = ["direct_html_workflow"]
