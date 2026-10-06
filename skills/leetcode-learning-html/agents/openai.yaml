@@ -1,0 +1,4 @@
+interface:
+  display_name: "LeetCode 高效学习 HTML"
+  short_description: "将一道算法题转为含心智模型、真实轨迹、手填槽位与迁移训练的学习页面"
+  default_prompt: "使用 $leetcode-learning-html，把 LeetCode 704 二分查找生成一份可离线打开的高效学习 HTML。"
